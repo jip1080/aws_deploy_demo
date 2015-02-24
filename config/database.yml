@@ -24,8 +24,13 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
+  adapter: mysql2
+  encoding: utf8
   database: demoprod
-  host: <%= ENV['MYSQL_HOST'] %>
-  username: <%= ENV['MYSQL_USER'] %>
-  password: <%= ENV['MYSQL_PASSWORD'] %>
+  host: kevy-prod3.clvhvj8sfhj2.us-east-1.rds.amazonaws.com
+  username: kevy
+  password: Krim2014!
+  port: 3306
+  pool: 5
+
+

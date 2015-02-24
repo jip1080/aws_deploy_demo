@@ -25,9 +25,4 @@ module AwsDeployDemo
     config.exceptions_app = self.routes
   end
 
-
-  def self.secret
-    "blah blah blah"
-  end
-
 end
