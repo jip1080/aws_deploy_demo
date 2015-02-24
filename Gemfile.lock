@@ -14,8 +14,6 @@ GEM
       activesupport (= 4.1.9)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    active_model_serializers (0.9.3)
-      activemodel (>= 3.2)
     activemodel (4.1.9)
       activesupport (= 4.1.9)
       builder (~> 3.1)
@@ -56,7 +54,6 @@ GEM
     json (1.8.2)
     kgio (2.9.3)
     libv8 (3.16.14.7)
-    logglier (0.2.11)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
@@ -64,9 +61,6 @@ GEM
     multi_json (1.10.1)
     mysql2 (0.3.18)
     nokogiri (1.5.9)
-    proxies (0.2.1)
-    puma (2.11.1)
-      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -90,8 +84,6 @@ GEM
     rdoc (4.2.0)
       json (~> 1.4)
     ref (1.0.5)
-    s3 (0.3.21)
-      proxies (~> 0.2.0)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -125,17 +117,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers
   aws-sdk
   coffee-rails (~> 4.0.0)
   execjs
   jbuilder (~> 2.0)
   jquery-rails
-  logglier
   mysql2
-  puma
   rails (= 4.1.9)
-  s3
   sdoc (~> 0.4.0)
   spring
   therubyracer

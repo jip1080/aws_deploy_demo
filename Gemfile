@@ -13,17 +13,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'aws-sdk'
-gem 'puma'
-gem 's3'
-gem 'active_model_serializers'
 
 group :production do
   gem 'unicorn'
-  gem 'logglier'
   gem 'execjs'
   gem 'therubyracer'
 end
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
