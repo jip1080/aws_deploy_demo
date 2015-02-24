@@ -14,6 +14,8 @@ GEM
       activesupport (= 4.1.9)
       builder (~> 3.1)
       erubis (~> 2.7.0)
+    active_model_serializers (0.9.3)
+      activemodel (>= 3.2)
     activemodel (4.1.9)
       activesupport (= 4.1.9)
       builder (~> 3.1)
@@ -62,6 +64,9 @@ GEM
     multi_json (1.10.1)
     mysql2 (0.3.18)
     nokogiri (1.5.9)
+    proxies (0.2.1)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -85,12 +90,8 @@ GEM
     rdoc (4.2.0)
       json (~> 1.4)
     ref (1.0.5)
-    sass (3.2.19)
-    sass-rails (4.0.5)
-      railties (>= 4.0.0, < 5.0)
-      sass (~> 3.2.2)
-      sprockets (~> 2.8, < 3.0)
-      sprockets-rails (~> 2.0)
+    s3 (0.3.21)
+      proxies (~> 0.2.0)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -110,8 +111,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    turbolinks (2.5.3)
-      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.0)
@@ -126,6 +125,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   aws-sdk
   coffee-rails (~> 4.0.0)
   execjs
@@ -133,11 +133,11 @@ DEPENDENCIES
   jquery-rails
   logglier
   mysql2
+  puma
   rails (= 4.1.9)
-  sass-rails (~> 4.0.3)
+  s3
   sdoc (~> 0.4.0)
   spring
   therubyracer
-  turbolinks
   uglifier (>= 1.3.0)
   unicorn
